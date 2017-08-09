@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4BAAuB;EACtB,WAAW,EAAE,gCAAgC;;AAG9C,UAAW;EACP,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,GAAG;;AAGpB,kBAAmB;EACf,OAAO,EAAE,eAAe;;AAG5B,OAAO;EACN,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK;EACtB,gBAAgB,EAAE,yBAAyB;EAC3C,UAAU,EAAE,IAAI",
+"sources": ["../scss/style_alumnos.scss"],
+"names": [],
+"file": "style_alumnos.css"
+}

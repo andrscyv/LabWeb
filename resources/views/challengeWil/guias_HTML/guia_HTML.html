@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guía HTML</title>
+	<meta charset="utf-8">
+	<meta name="Guía para programar en HTML">
+	<meta name="keywords" content="HTML">
+	<meta name="author" content="Jaime Limón Samperio">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_guia_HTML.css">
+</head>
+<body>
+
+	<div class="header col-12">
+		<h1>Guía para HTML</h1>
+	</div>
+
+	<div class="col-10 hbar">
+		<ul class="menutop">
+			<li class="hlist"><a class="active" href="#home">Home</a></li>
+			<li class="hlist"><a href="#news">News</a></li>
+			<li class="hlist"><a href="#contact">Contact</a></li>
+			<li class="hlist"><a href="#about">About</a></li>
+		</ul>
+	</div>
+
+	<div class="col-12 vbar">
+		<ul class="menuleft">
+			<li class="vlist"><a href="#Elementos">Elementos</a></li>
+			<li class="vlist"><a href="#news">Headings</a></li>
+			<li class="vlist"><a href="#contact">Párrafos</a></li>
+			<li class="vlist"><a href="#about">Imágenes</a></li>
+			<li class="vlist"><a href="#about">Atributos</a></li>
+			<li class="vlist"><a href="#about">Formato de texto</a></li>
+			<li class="vlist"><a href="#about">Comentarios</a></li>
+			<li class="vlist"><a href="#about">Bookmark</a></li>
+			<li class="vlist"><a href="#about">Camino externo</a></li>
+			<li class="vlist"><a href="#about">Listas</a></li>
+			<li class="vlist"><a href="#about">Bloques</a></li>
+			<li class="vlist"><a href="#about">Inline</a></li>
+			<li class="vlist"><a href="#about">Iframes</a></li>
+			<li class="vlist"><a href="#about">Camino de archivo</a></li>
+			<li class="vlist"><a href="#about">Viewport</a></li>
+			<li class="vlist"><a href="#about">Computer code</a></li>
+			<li class="vlist"><a href="#about">Variables</a></li>
+			<li class="vlist"><a href="#about">Entities</a></li>
+			<li class="vlist"><a href="#about">Símbolos</a></li>
+			<li class="vlist"><a href="#about">Encoding (Character Sets)</a></li>
+			<li class="vlist"><a href="#about">Forms</a></li>
+
+		</ul>
+	</div>
+
+	<div>
+		<div class="col-9 content">
+			<img src="/Users/jaimelimonsamperio/Desktop/web/images/logohtml.png" height="auto" width="300px" style="float: right; margin-right: 0%; margin-top: 5%">
+			<h2>Documentos HTML</h2>
+			<p>Todo documento HTML debe iniciar con la declaración &lt!DOCTYPE html&gt.</p>
+			<p>El documento HTML inicia con el tag &lthtml&gt y termina con &lt/html&gt.</p>
+			<p>La parte visible de un documento HTML se encuentra en el tag body.</p>
+
+			<h2>Elementos</h2>
+			<h3>&lthead&gt</h3>
+			<p>El elemento head es un contenedor de metadatos que se inserta antes del body y la información no se muestra. Los metadatos típicamente definen title, character set, styles, links, scripts y otros metadatos. </p>
+			<p>Tags ejemplos:
+				<ul>
+					<li>&lttitle&gt</li>
+					<li>&ltstyle&gt</li>
+					<li>&ltmeta&gt</li>
+					<li>&ltlink&gt</li>
+					<li>&ltscript&gt</li>
+					<li>&ltbase&gt</li>
+				</ul>
+			</p>
+			<h3>&lttitle&gt</h3>
+			<p>Este elemento define el título del documento y es requerido en todo documento HTML/XHTML.</p>
+			<p>El elemento define:
+				<ul>
+					<li>El título en la pestaña del buscador</li>
+					<li>Título en caso de que se agregue a favoritos</li>
+					<li>Muestra el título para la búsqueda de la página</li>
+				</ul>
+			</p>
+			<p>Ejemplo: <br>
+				&lthead&gt <br>
+	  				&lttitle&gtPage Title&lt/title&gt<br>
+				&lt/head&gt<br>
+			</p>
+			<img src="/Users/jaimelimonsamperio/Desktop/web/images/elementoshtml.png" height="auto" width="250px" style="float: left; margin-right: 10%;">
+			<h3>&ltmeta&gt</h3>
+			<p>Es usado para especificar qué character set es usado, descripción de la página, palabras clave, autor y otros metadatos.Define una descri[ción de la página web.</p>
+			<p>Ejemplo:<br>
+				&ltmeta charset="UTF-8"&gt
+			</p>
+
+			<h3>&ltbase&gt</h3>
+			<p>Especifica la URL base y el target base para todos los URLs relativos.<br>
+			&ltbase href="https://www.w3schools.com/images/" target="_blank"&gt
+			</p>
+			<br>
+			<br>
+			<h2>Headings</h2>
+			<p>Los headings en HTML se definen desde &lth1&gt hasta &lth6&gt.</p>
+			<p>h1 define al heading más importante mientras que h6 define al menos importante.</p>
+
+			<h2>Párrafos</h2>
+			<p>Los párrafos en HTML se definen con la etiqueta &ltp&gt.</p>
+			<p>No es necesario utilizar el tag final pero se recomienda siempre utilizarlo.</p>
+			<p>Ejemplo:<br>
+			<img src="/Users/jaimelimonsamperio/Desktop/web/images/syntax.png" height="auto" width="1000px" style="float: right;">
+				&lt!DOCTYPE html&gt<br>
+				&lthtml&gt<br>
+				&ltbody&gt<br>
+
+				&lth1>My First Heading&lt/h1&gt<br>
+				&ltp>My first paragraph.&lt/p&gt<br>
+
+				&lt/body&gt<br>
+				&lt/html&gt<br>
+			</p>
+
+			<h2>Links</h2>
+			<p>Los links en HTML se definen con la etiqueta a y el &ltlink&gt de destino se inserta con el atributo herf.</p>
+			<p>Ejemplo:<br>
+				&lta href="https://www.w3schools.com/html/">Visit our HTML tutorial&lt/a&gt
+				<a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">Visita w3Schools</a>
+			</p>
+			<p>También se utiliza para linkear hojas de estilo externas.<br>
+				&ltlink rel="stylesheet" href="mystyle.css"&gt
+			</p>
+			<p>Un link local (en el mismo sitio) se especifica con una URL relativa (sin http://www....).</p>
+			<h3>Colores de link</h3>
+			<p>Por default, un link aparece de la siguiente manera (en todo buscador):<br>
+			Link no visitado subrayado en azul.<br>
+			Link visitado subrayado en morado.<br>
+			Link activo subrayado en rojo.<br></p>
+			<h3>El atributo target</h3>
+			<p>El atributo target define dónde abrir el documento del link dentro del elemento herf.</p>
+			<p>El target puede tener los sigueintes valores:<br>
+			_blank - Opens the linked document in a new window or tab<br>
+			_self - Opens the linked document in the same window/tab as it was clicked (this is default)<br>
+			_parent - Opens the linked document in the parent frame<br>
+			_top - Opens the linked document in the full body of the window<br>
+			framename - Opens the linked document in a named frame<br></p>
+			<p>Ejemplo: &lta href="https://www.w3schools.com/" target="_blank">Visit W3Schools!&lt/a&gt</p>
+
+			<h2>Imágenes en HTML</h2>
+			<p>En este caso, las imágenes se definen con el tag img seguido de sus atributos.</p>
+			<img src="/Users/jaimelimonsamperio/Desktop/web/images/back.jpg" height="auto" width="300px" style="float: right;">
+			<p>Ejemplos:<br>
+			&lt!DOCTYPE html&gt<br>
+			&lthtml&gt<br>
+			&ltbody&gt<br>
+			&lth2>Spectacular Mountain&lt/h2&gt<br>
+			&ltimg src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;"&gt<br>
+			&lt/body&gt<br>
+			&lt/html&gt<br>
+			</p>
+			<p>Todos los elementos de los que hemos hablado inician con una etiqueta y terminan de igual forma.</p>
+			<p>Existen elementos vacíos en HTML que se definen con el tag br. Este tag define el line break cuando no se quiere utilizar otro párrafo..</p>
+			<p>Los tags no distinguen entre mayúsculas o minúsculas, sin embargo es preferible utilizar minúsculas para los tags.</p>
+
+			<h2>Atributos</h2>
+			<h3>Declaración del lenguaje en HTML </h3>
+			<p>El lenguaje se declara dentro de la etiqueta html con el atributo lang.</p>
+			<h3>Atributo title</h3>
+			<p>El atributo title se añade dentro del elemento p. El atributo aparecerá como pequeña pestaña cuando el cursor se encuntre encima del párrafo.</p>
+			<h3>Atributo herf</h3>
+			<p>Los links en HTML se definen con la etiqueta a. La URL se inserta en el atributo herf que se encuentra dentro de la etiqueta.</p>
+			<h3>Atributos de tamaño</h3>
+			<p>Dentro de la etiqueta img se insertar como atributos el src (source) y el tamaño de la imagen (width and height).</p>
+			<p>El tamaño de la imagen está especificado en pixeles.</p>
+			<h3>Atributo alt</h3>
+			<p>Este atributo especifica una alternativa de texto a mostrar cuando una imagen no se puede mostrar.</p>
+			<p>El atributo alt de inserta de igual manera en la etiqueta img.</p>
+			<p>Al igual que los tags, se sugiere utilizar minúsculas para los atributos.</p>
+			<p>Todos los elementos en HTML pueden tener atributos.</p>
+			<p>Se recomienda utilizar comillas para los valores de los atributos.</p>
+			<h3>Lista de atributos</h3>
+			<p>alt: Alternativa de texto cuando una imagen no se puede mostrar.</p>
+			<p>disabled: Especifica que un elemento de entrada debe ser desactivado.</p>
+			<p>href: Especifica la URL(dirección electrónica) para un link o enlace.</p>
+			<p>id: Especifica un id único para un elemento.</p>
+			<p>src: Especifica la URL para una imagen.</p>
+			<p>style: Especifica un estilo CSS para un elemento.</p>
+			<p>title: Especifica información extra de un elemento.</p>
+
+			<h2>Dando formato al texto</h2>
+			<h3>Formato de elementos</h3>
+			<p>HTML utiliza elementos como b para indicar bold text o i para indicar italic text.</p>
+			<h3>Elementos de formato</h3>
+			<p>b: Bold text</p>
+			<p>strong: Strong text</p>
+			<p>i: Italic text</p>
+			<p>em: </p>
+			<p>mark: Texto marcado</p>
+			<p>small: Texto pequeño</p>
+			<p>del: Texto eliminado</p>
+			<p>ins: Texto insertado</p>
+			<p>sub: Subscript text</p>
+			<p>sup: Superscript text</p>
+
+			<h2>Comentarios</h2>
+			<p>Los etiqueto de comentarios se utiliza para insertar comentarios en en código HTML.</p>
+			<p>Ejemplo:<br>
+			&lt!-- Write your comments here --&gt
+			</p>
+			<h3>Comentarios condicionales</h3>
+			<p>Solo son ejecutados por Internet Explorer.</p>
+
+			<h2>Crear un bookmark</h2>
+			<p>Son utilizados para saltar a una parte específica de la página web.</p>
+			<p>Se debe crear un bookmark y después añadir un link.</p>
+			<p>Cuando se de click en el bookmark, la página se desliza a la ubicación del bookmark.</p>
+			<p>Ejemplo: <q>h2 id="C4">Chapter 4 /h2</q><br>
+			a href = "#C4"> Jump to Chapter 4 /a
+
+			<h2>Camino externo</h2>
+			<p>Las página externas pueden ser referenciadas con un URL completo o con un camino relativo a la página actual.</p>
+			<p>&lta href="https://www.w3schools.com/html/default.asp">HTML tutorial &lt/a><br>
+			&lta href="/html/default.asp">HTML tutorial &lt/a></p>
+
+			<h2>Listas en HTML</h2>
+			<h3>Lista desordenada</h3>
+			<p>Una lista ordenada empieza con el tag ul. Cada item de la lista empieza con li.</p>
+			<h3>Lista ordenada</h3>
+			<p>Una lista ordenada empieza con el tag ol. Cada item de la lista empieza con li.</p>
+			<h3>Listas de descripción</h3>
+			<p>Es una lista de terminos con una descripción por término. El tag dl define la lista de descripción. El tag dt define el término (nombre) y el tag dd describe cada término.</p>
+			<h2>Listas horizontales</h2>
+			<p>Se utlizan con CSS.</p>
+
+			<h2>Bloques</h2>
+			<h3>Block-level elements</h3>
+			<p>Un block-level element siempre empieza en una nueva linea y toma la anchura disponible.</p>
+			<p>Ejemplo:<br>
+			&ltdiv style="background-color:black;color:white;padding:20px;"><br>
+  			&lth2>London&lt/h2><br>
+  			&ltp>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt/p><br>
+			&lt/div><br>
+			</p>
+			<div style="background-color: grey; color: white ;padding: 20px">
+				<h1>Primer &ltdiv></h1>
+				<p>Este div contiene un style.</p>
+			</div>
+			<p>Ejemplos:
+			<ul>
+				<li>div</li>
+				<li>h1-h6</li>
+				<li>p</li>
+				<li>form</li>
+			</ul>
+			</p>
+
+			<h2>Elementos en linea</h2>
+			<p>Un elemento en linea no empieza en una nueva linea y solo toma la anchura necesaria.
+			</p>
+			<p>Ejemplo: &lta href="https://www.w3schools.com/" target="_blank">Visit W3Schools!&lt/a&gt&lt/p></p>
+			<p>Ejemplos:
+			<ul>
+				<li>span</li>
+				<li>a</li>
+				<li>img</li>
+			</ul>
+			</p>
+			<h4>El elemento div</h4>
+			<p>Es generalmente utilizado como contenedor de otros elementos HTML.</p>
+			<p>Este elemento no requiere atributos pero style y class son comunes. Se utiliza en conjunto con CSS.</p>
+			<h4>El elemento span</h4>
+			<p>Es usualmente utilizado como contenedor de algún texto.</p>
+			<p>El elemento no requiere atributos pero style y class son comunes.</p>
+
+			<h2>IFrames</h2>
+			<p>Un IFrame es usado para mostrar una página web en una página web. Se define con el tag iframe con el atributo src y la URL.</p>
+			<p>Un iframe utiliza los atributos height y width para especificar el tamaño del iframe.</p>
+			<p>Ejemplo:<br>
+				&ltiframe src="demo_iframe.htm" name="iframe_a">&lt/iframe><br>
+				&ltp>&lta href="https://www.w3schools.com" target="iframe_a">W3Schools.com&lt/a>&lt/p>
+			</p>
+			<iframe src="https://www.google.com.mx" height="200" width="300"></iframe>
+			<h3>Remover el borde</h3>
+				<p>Un iframe tiene un borde alrededor por default.</p>
+				<p>Para remover el borde, se agrega un style y esa la propiedad CSS de border.</p>
+			<h3>Objetivo para un link</h3>
+				<p>El atributo target de un link debe referirse al atributo name de un iframe.</p>
+
+			<h2>Camino de archivo</h2>
+			<p>Un file path describe la localización de un archivo en un sitio web.</p>
+			<p> File paths son utilizados cuando se linkea a un archivo externo como:
+				<ul>
+					<li>Web pages</li>
+					<li>Images</li>
+					<li>Style sheets</li>
+					<li>JavaScripts</li>
+				</ul>
+			</p>
+			<h3>Absolute File Paths</h3>
+				<p>Un file path absoluto es el URL completo a un archivo de internet.</p>
+			<h3>Camino relativo a un archivo</h3>
+				<p>Un relative file path apunta a un archivo relativo dentro de la página actual.</p>
+
+			<h2>Establecer el Viewport</h2>
+			<p><b>El viewport es la parte visible por el usuario. Varía con el dispositivo.</b></p>
+			<p>Ejemplo:<br>
+				&ltmeta name="viewport" content="width=device-width, initial-scale=1.0">
+			</p>
+
+			<h2>HTML computer code elements</h2>
+			<h4>&ltkbd&gt para Keyboard Input</h4>
+			<p>Representa un user input, como keyboard input o comandos de voz.<br>
+				&ltp&gtSave the document by pressing &ltkbd&gtCtrl + S&lt/kbd&gt&lt/p&gt
+			</p>
+			h2>&ltsamp&gt for program output</h2>
+			<p>El elemento representa un output desde un programa o sistema.<br>
+			&ltp&gtIf you input wrong value, the program will return &ltsamp&gtError!&lt/samp&gt&lt/p&gt
+			</p>
+			<h4>&ltcode&gt for computer code</h4>
+				<p>Define un fragmento de código.<br>
+					&ltcode&gt<br>
+					x = 5;<br>
+					y = 6;<br>
+					z = x + y;<br>
+					&lt/code&gt
+				</p>
+
+			<h2>&ltvar&gt para variables</h2>
+			<p>Define una variable.<br>
+				Einstein wrote: &ltvar&gtE&lt/var&gt = &ltvar&gtmc&lt/var&gt&ltsup&gt2&lt/sup&gt
+			</p>
+
+			<h2>HTML entities</h2>
+			<p>Los caracteres que no están presentes en el teclado pueden ser reemplazados por entidades.</p>
+			<p>Ejemplo:<br>
+				&entity_name;
+			</p>
+			<h3>Non-breaking Space</h3>
+
+				<p>Un character entity común es el nbsp. Es un espacio que no se separará en un anueva línea.<br>
+				Ejemplo:<br>
+				10&nbspPM</p>
+
+			<h2>Símbolos en HTML</h2>
+			<h3>Entidades de símbolo</h3>
+				<p>Para añadir algunos símbolos que no se encuentran en el teclado se utilizan las entidades de nombre.<br>
+				Ejemplos:<br>
+					<ul>
+						<li>&ltp&gtI will display &euro;&lt/p&gt</li>
+					</ul>
+				</p>
+
+			<h2>HTML Encoding (Character Sets) </h2>
+			<p>UTF-8 es utilizado en HTML 5 porque cubre casi la totalidad de los caracteres y símbolos del mundo.</p>
+			<h4>El atributo charset</h4>
+				<p>Para que un browser pueda mostrar correctamente la página web, se debe especificar en el meta el character set utilizado.</p>
+
+			<h2>HTML Forms</h2>
+			<h3>Elemento &ltform&gt</h3>
+			<p>Es un elemento que define una forma para capturar un datos que ingresa el usuario.</p>
+			<p>Los elementos form son diferentes tipos de input, como text fields, checkboxes, radio buttons, submit buttons y más.</p>
+			<h3>Elemento &ltinput&gt</h3>
+
+			<p>Es el elemento más importante de un elemento form.<br>
+			Ejemplos: <br>
+			<ul>
+				<li>&ltinput type="text"&gt</li>
+				<li>&ltinput type="radio"&gt</li>
+				<li>&ltinput type="submit"&gt</li>
+			</ul>
+			</p>
+
+			<h3>Elemento &ltselect&gt</h3>
+			<p>Este elemento define un DDL (drop-down list).<br>
+			 Se utiiza el elemento option con un value. Para definir un elemento pre seleccionado, se añade el atributo selected a la opción.</p>
+			<h3>Elemento &lttextarea&gt</h3>
+			<p>Define un campo multi línea (text area). Utiliza los atributos rows(lineas) y cols(width).</p>
+			<h3>Elemento &ltbutton&gt</h3>
+			<p>Define un botón para hacer click.</p>
+			<h3>Atributo Action</h3>
+			<p>Define la acción a realizar cuando se ejecuta el form.</p>
+			<h3>Atributo Method</h3>
+			<p>Especifica el método HTTP (GET o POST) a utilizar. </p>
+			<h4>¿Cuándo usar GET?</h4>
+			<p>Es el método default al usar un submit. Se utiliza para información NO sensible.</p>
+			<h4>¿Cuándo usar POST?</h4>
+			<p>Al contrario del GET, se utiliza para manejar información sensible. No muestra la información.</p>
+			<h3>Atributo Name</h3>
+			<p>Cada campo input debe llevar un atributo nombre para ejecutarse. Si no se utliza el atributo, el imput no será enviado.</p>
+
+			<h2>Agrupando Form Data con &ltfieldset&gt</h2>
+			<p>Es utilizado para agrupar datos relacionados en un form.</p>
+			<p>El elemento legend define un encabezado para el fieldset.</p>
+
+			<h2>Lista de atributos para form</h2>
+			<p>
+				<ul>
+					<li>accept-charset	Specifies the charset used in the submitted form (default: the page charset).</li>
+					<li>action	Specifies an address (url) where to submit the form (default: the submitting page).</li>
+					<li>autocomplete	Specifies if the browser should autocomplete the form (default: on).</li>
+					<li>enctype	Specifies the encoding of the submitted data (default: is url-encoded).</li>
+					<li>method	Specifies the HTTP method used when submitting the form (default: GET).</li>
+					<li>name	Specifies a name used to identify the form (for DOM usage: document.forms.name).</li>
+					<li>novalidate	Specifies that the browser should not validate the form.</li>
+					<li>target	Specifies the target of the address in the action attribute (default: _self).</li>
+				</ul>
+			</p>
+
+			<h2>Lista de atributos para inputs</h2>
+				<ul>
+					<li>value: Especifica el valor inicial para un input field.</li>
+					<li>readonly: Especifica solo se puede leer.</li>
+					<li>disabled: Especifica que el input field está desactivado.</li>
+					<li>size: Especifica el tamaño en caracteres del input field.</li>
+					<li>maxlength: Especifica el tamaño máximo de un input field.</li>
+					<li>autocomplete: Cuando está encendido, el browser autocompleta con valores antes introducidos por el usuario.</li>
+					<li>novalidate: Especifica que al enviar no sea validada la información.</li>
+					<li>autofocus: Especifica que el input field automáticamente se enfoca cuando carga la página.</li>
+					<li>form: Especifica un o que uno o más inputs pertenecen a un form.</li>
+					<li>formaction: Especifica la URL o file que se procesará en input control cuando el form se ejecute. Sobreescribe el atributo action.</li>
+					<li>formenctype: Especifica cómo se deben codificar los datos cuando se envía la información (solo forms con method=post).</li>
+					<li>formmethod: Define el method HTTP para enviar form-data a un action URL.</li>
+					<li>formnovalidate: Sobreescribe el novalidate del form.</li>
+					<li>formtarget: Especifica un name o keyword que indica dónde mostrar la respuesta recibida del submitting form.</li>
+					<li>list: Se refiere a un &ltdatalist&gt que contiene opciones predefinidas para un input element.</li>
+					<li>multiple: Especifica que el usuario tiene permitido ingresar más de un valor en el input.</li>
+					<li>placeholder: Especifica un pista que describe el valor esperado en el input field.</li>
+					<li>required: Especifica que un inputfield debe ser llenado antes de enviar la información.</li>
+					<li>step: Especifica el intervalo numérico para un input.</li>
+				</ul>
+
+		</div>
+
+	</div>
+</div>
+</body>
+</html>
